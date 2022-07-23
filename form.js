@@ -5,10 +5,10 @@ const textArea = document.querySelector('#Text-Area');
 const errorMessage = document.querySelector('.error-message');
 const reg = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
 formField.addEventListener('submit', (events) => {
-    events.preventDefault();
-    if (userName.value.trim() === '') {
-  errorMessage.style.display = 'block';
-  errorMessage.textContent = 'name can not be empty';
+  events.preventDefault();
+  if (userName.value.trim() === '') {
+    errorMessage.style.display = 'block';
+    errorMessage.textContent = 'name can not be empty';
   } else if (emailinput.value.trim() === '') {
     errorMessage.style.display = 'block';
     errorMessage.textContent = 'email can not be empty';
