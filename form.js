@@ -20,8 +20,8 @@ form.addEventListener('submit', (events) => {
     errorMessage.style.display = 'none';
   }
 });
- isemailValid(email);
+isemailValid(email);
 {
-    const re = /^[a-z-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z-Z0-9-]+(?:\.[a-z-Z0-9-]+)*$/;
-    return re.test(String(email));
- }
+  const re = /^[a-z-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z-Z0-9-]+(?:\.[a-z-Z0-9-]+)*$/;
+  return re.test(String(email));
+}
