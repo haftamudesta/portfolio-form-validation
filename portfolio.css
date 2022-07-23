@@ -1000,6 +1000,11 @@ ul {
   display: none;
 }
 
+.error-message {
+  border: 1px solid red;
+  color: red;
+}
+
 @media only screen and (min-width: 768px) {
   .nav-container {
     width: 100vw;
