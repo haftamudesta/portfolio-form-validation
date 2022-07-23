@@ -3,12 +3,10 @@ const userName = document.querySelector('#name');
 const emailinput = document.querySelector('#email');
 const textArea = document.querySelector('#Text-Area');
 const errorMessage = document.querySelector('.error-message');
-function isemailValid() { }
-let email;
- const reg = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+const reg = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
 formField.addEventListener('submit', (events) => {
-  events.preventDefault();
-  if (userName.value.trim() === '') {
+    events.preventDefault();
+    if (userName.value.trim() === '') {
   errorMessage.style.display = 'block';
   errorMessage.textContent = 'name can not be empty';
   } else if (emailinput.value.trim() === '') {
@@ -22,7 +20,7 @@ formField.addEventListener('submit', (events) => {
     errorMessage.style.display = 'block';
     errorMessage.textContent = 'text area can not be empty';
   } else {
-      errorMessage.style.display = 'none';
-      formField.submit();
+    errorMessage.style.display = 'none';
+    formField.submit();
   }
 });
